@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+        <!-- Heading Box -->
+        <div class="heading-box">
+            <h1>shuitsuh - Clothing brand</h1>
+        </div>
+        <br>
+    <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">← Back</button>
+
+    <div class="container">
+        <!-- Image Item -->
+        <div class="gallery-item">
+            <img src="image/shuitsuh/Logo.jpg" alt="Design 1" onclick="openMedia(this)">
+            <div class="alt-text">Logo</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image/shuitsuh/T-shirt-White.jpg" alt="Design 1" onclick="openMedia(this)">
+            <div class="alt-text">T-shirt Mockup</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image/shuitsuh/mood-board.jpg" alt="Design 1" onclick="openMedia(this)">
+            <div class="alt-text">Mood Board</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image/shuitsuh/Brand-Pattern.jpg" alt="Design 1" onclick="openMedia(this)">
+            <div class="alt-text">Pattern</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image/shuitsuh/t-shirt-Black-and-Yellow.jpg" alt="Design 1" onclick="openMedia(this)">
+            <div class="alt-text">T-shirt Mockup</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image/shuitsuh/Blue-Tshirt-Poster.jpg" alt="Design 1" onclick="openMedia(this)">
+            <div class="alt-text">Poster</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image/shuitsuh/suitsuh Poster.jpg" alt="Design 1" onclick="openMedia(this)">
+            <div class="alt-text">Poster</div>
+        </div>
+        
+
+        <!-- Video Item 
+        <div class="gallery-item">
+            <video src="design/videoplayback.mp4" alt="Design Video 1" onclick="openMedia(this)">
+                Your browser does not support the video tag.
+            </video>
+            <div class="alt-text">Design Video 1</div>
+        </div>
+-->
+
+
+        <!-- Add more items as needed -->
+    </div>
+
+    <!-- Modal for displaying media -->
+    <div id="mediaModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" class="modal-item" src="" alt="">
+            <video id="modalVideo" class="modal-item" controls>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

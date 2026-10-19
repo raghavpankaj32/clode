@@ -1,0 +1,83 @@
+.containers {
+    column-count: 2; /* Adjust number of columns */
+    column-gap: 15px;
+    padding: 15px;
+}
+
+
+/* Gallery Item */
+.gallery-items {
+    margin-bottom: 20px;
+    position: relative;
+    break-inside: avoid;
+}
+
+.gallery-items img, .gallery-item video {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.gallery-items img:hover, .gallery-items video:hover {
+    transform: scale(1.05);
+}
+
+/* Alt Text Styling (hidden initially) */
+.alt-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show Alt Text on Hover */
+.gallery-items:hover .alt-text {
+    opacity: 1;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-item {
+    max-width: 80%;
+    max-height: 80%;
+    display: none;
+}
+
+.modal img {
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
